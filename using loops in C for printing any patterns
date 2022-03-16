@@ -1,34 +1,63 @@
-//Manohar Reddy-21BRS1177
+//Author - Manohar Reddy
+// Registration number-21BRS1177
+//Thes code to print Reverse Pyramid (Equilateral triangle) star pattern.
 
 #include <stdio.h>
 int main()
 {
-int a,i,j;
-
-printf("enter n value : ");
-scanf("%d",&a );
-for(i=0;i<=a;i++)
-{
-for(j=1;j<=i;j++)
-{
-printf(" + ");
-}
-printf("\n");
-}
+    int i, j, z;
+    
+// here z means no.of rows.
+    printf("Enter value of z : ");
+    
+    
+    scanf("%d", &z);
+    
+    
+    for(i=0; i<=z; i++)
+    
+    {
+        for(j=0; j<i; j++)
+        {
+            printf(" ");
+        }
+        
+        
+        for(j=i; j<=z; j++)
+        {
+            printf("*");
+        }
+        
+        
+        for(j=i; j<z; j++)
+        {
+            printf("*");
+        }
+        
+        
+        printf(" \n");
+        
+    }
+    
+   printf("\nThe required Reverse Pyramid is ready!! ");
+    
+    return 0;
 }
 
 /*
 result: 
-Enter n value : 10 
- + 
- +  + 
- +  +  + 
- +  +  +  + 
- +  +  +  +  + 
- +  +  +  +  +  + 
- +  +  +  +  +  +  + 
- +  +  +  +  +  +  +  + 
- +  +  +  +  +  +  +  +  + 
- +  +  +  +  +  +  +  +  +  + 
+Enter value of z : 10 
+ ******************* 
+  ***************** 
+   *************** 
+    ************* 
+     *********** 
+      ********* 
+       ******* 
+        ***** 
+         *** 
+          * 
 
-[Execution complete with exit code 0]*/
+The required Reverse Pyramid is ready!! 
+[Execution complete with exit code 0]
+*/

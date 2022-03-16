@@ -1,0 +1,34 @@
+//Manohar Reddy-21BRS1177
+
+#include <stdio.h>
+int main()
+{
+int a,i,j;
+
+printf("enter n value : ");
+scanf("%d",&a );
+for(i=0;i<=a;i++)
+{
+for(j=1;j<=i;j++)
+{
+printf(" + ");
+}
+printf("\n");
+}
+}
+
+/*
+result: 
+Enter n value : 10 
+ + 
+ +  + 
+ +  +  + 
+ +  +  +  + 
+ +  +  +  +  + 
+ +  +  +  +  +  + 
+ +  +  +  +  +  +  + 
+ +  +  +  +  +  +  +  + 
+ +  +  +  +  +  +  +  +  + 
+ +  +  +  +  +  +  +  +  +  + 
+
+[Execution complete with exit code 0]*/
